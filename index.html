@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hito1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	
+	<div class="contenido">
+	<form action="alquiler.php" method="get">
+		<p id="titulo">Caracteristicas de la vivienda:</p>
+		<p>Selecciona la zona que me guste a la gente 
+			<select id="listado">
+  			<option value="ciudad lineal">Ciudad lineal</option>
+  			<option value="hortaleza" selected>Hortaleza</option>
+  			<option value="retiro">Retiro</option>
+  			<option value="sanblas">San blas</option>
+			</select>
+		</p>
+		
+
+		<p>¿De que tamaño quiere la vivienda?</p>
+			<input type="radio" name="piso" value="1 dormitorio 50 metros" id="1">
+				<label for="1">1 dormitorio 50 metros</label><br>
+			<input type="radio" name="piso" value="2 dormitorios 70 metros" id="2">
+				<label for="">2 dormitorios 70 metros</label><br>
+			<input type="radio" name="piso" value="3 dormitorios 100 metros" id="3">
+				<label for="">3 dormitorios 100 metros</label><br>
+
+		<p>Seleccione las mejoras que desee:</p>
+			<input type="checkbox" name="mejoras" id="calefaccion">
+				<label for="calefaccion">Calefacción</label><br>
+			<input type="checkbox" name="mejoras" id="aire">
+				<label for="aire">Aire acondicionado</label><br>
+			<input type="checkbox" name="mejoras" id="bañera">
+				<label for="bañera">Bañera hidromasaje</label><br><br>
+				
+		<input type="submit" value="Enviar datos">
+		<input type="reset" value="Borrar datos">
+	</form>
+	<br>
+	<input type="submit" name="enviar" onclick="calcularPrecio()" value="Precio">
+
+	<div id="salida"></div>
+	</div>
+</body>
+</html>

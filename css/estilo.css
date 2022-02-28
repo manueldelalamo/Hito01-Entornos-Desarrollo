@@ -1,0 +1,14 @@
+.contenido{
+	border-width: thin;
+    border-style: solid;
+    border-color: #000;
+    padding: 10px;
+}
+
+#titulo{
+	width: 220px;
+    font-size:18px;
+    margin-top:-20px;
+    margin-left:10px;
+    background:white;
+}
